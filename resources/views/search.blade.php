@@ -18,13 +18,14 @@
         </a>
         <div class="flex-1 bg-[#F5F5F5] rounded-xl flex items-center px-4 py-3 md:py-4">
             <i class="fa-solid fa-magnifying-glass text-gray-500 mr-3 text-lg"></i>
-            <input type="text" placeholder="Cari destinasi atau penginapan..." class="w-full bg-transparent outline-none text-gray-800 text-sm md:text-base placeholder-gray-500 font-medium">
+            <input type="text" id="search-input" placeholder="Cari destinasi atau penginapan..." class="w-full bg-transparent outline-none text-gray-800 text-sm md:text-base placeholder-gray-500 font-medium">
             <i class="fa-solid fa-microphone text-gray-500 ml-3 text-lg"></i>
         </div>
     </header>
 
     <div class="flex-1 overflow-y-auto pb-32">
         
+        <div id="default-content">
         {{-- Saran Lokasi --}}
         <section class="px-5 md:px-8 py-6">
             <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-5">Saran Lokasi</h2>
@@ -118,30 +119,165 @@
 
             </div>
         </section>
+        </div>
+
+        {{-- Search Results --}}
+        <div id="search-results" class="hidden px-4 md:px-8 py-6">
+            <!-- Header Area for Results -->
+            <div class="flex justify-between items-start mb-6">
+                <div>
+                    <h1 class="text-2xl font-bold text-[#1A1F2B]">Stay in Nairobi</h1>
+                    <p class="text-sm text-gray-500">128 properties available &bull; Oct 12 - 19</p>
+                </div>
+                <div class="w-10 h-10 bg-[#F0F4F8] rounded-full flex items-center justify-center text-[#4A5568]">
+                    <i class="fa-solid fa-map"></i>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="flex gap-2 overflow-x-auto pb-2 mb-6" style="scrollbar-width: none;">
+                <button class="flex items-center gap-2 bg-[#4A646C] text-white px-4 py-2 rounded-full text-sm font-medium shrink-0">
+                    <i class="fa-solid fa-sliders"></i> Filters
+                </button>
+                <button class="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium shrink-0">
+                    Price
+                </button>
+                <button class="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium shrink-0">
+                    Property type
+                </button>
+                <button class="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium shrink-0">
+                    Rating
+                </button>
+            </div>
+
+            <!-- Properties List -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="relative h-56">
+                        <img src="/images/giraffe_view_suite.png" class="w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 bg-white px-2 py-1 rounded-md flex items-center gap-1 text-[10px] font-bold text-gray-800 shadow-sm uppercase">
+                            <i class="fa-solid fa-circle-check text-[#A85A32]"></i> Verified Host
+                        </div>
+                        <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 flex items-center justify-center text-white backdrop-blur-sm transition-colors hover:bg-black/40">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="text-lg font-bold text-gray-900 line-clamp-1">The Giraffe View Suite</h3>
+                            <div class="flex items-center gap-1 bg-[#D0EDF4] text-[#218A9C] px-2 py-0.5 rounded text-xs font-bold shrink-0">
+                                <i class="fa-solid fa-star text-[10px]"></i> 4.92
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-3">Lavington, Nairobi</p>
+                        <div class="flex flex-wrap gap-x-4 gap-y-2 text-xs text-gray-600 mb-4">
+                            <span class="flex items-center gap-1"><i class="fa-solid fa-bed"></i> 2 Beds</span>
+                            <span class="flex items-center gap-1"><i class="fa-solid fa-wifi"></i> Free WiFi</span>
+                            <span class="flex items-center gap-1"><i class="fa-solid fa-water-ladder"></i> Pool</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-2 border-t pt-4">
+                            <div>
+                                <span class="text-xl font-bold text-[#A85A32]">$120</span>
+                                <span class="text-xs text-gray-500">/ night</span>
+                            </div>
+                            <button class="bg-[#A85A32] text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-[#8e4c2a] transition-colors">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="relative h-56">
+                        <img src="/images/skyline_loft.png" class="w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 bg-white px-2 py-1 rounded-md flex items-center gap-1 text-[10px] font-bold text-gray-800 shadow-sm uppercase">
+                            <i class="fa-solid fa-circle-check text-[#A85A32]"></i> Verified Host
+                        </div>
+                        <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 flex items-center justify-center text-white backdrop-blur-sm transition-colors hover:bg-black/40">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="text-lg font-bold text-gray-900 line-clamp-1">Skyline Executive Loft</h3>
+                            <div class="flex items-center gap-1 bg-[#D0EDF4] text-[#218A9C] px-2 py-0.5 rounded text-xs font-bold shrink-0">
+                                <i class="fa-solid fa-star text-[10px]"></i> 4.85
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-3">Westlands, Nairobi</p>
+                        <div class="flex flex-wrap gap-x-4 gap-y-2 text-xs text-gray-600 mb-4">
+                            <span class="flex items-center gap-1"><i class="fa-solid fa-house"></i> Entire Apt</span>
+                            <span class="flex items-center gap-1"><i class="fa-solid fa-square-parking"></i> Parking</span>
+                            <span class="flex items-center gap-1"><i class="fa-solid fa-dumbbell"></i> Gym</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-2 border-t pt-4">
+                            <div>
+                                <span class="text-xl font-bold text-[#A85A32]">$85</span>
+                                <span class="text-xs text-gray-500">/ night</span>
+                            </div>
+                            <button class="bg-[#A85A32] text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-[#8e4c2a] transition-colors">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="relative h-56">
+                        <img src="/images/karen_cottage.png" class="w-full h-full object-cover">
+                        <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 flex items-center justify-center text-white backdrop-blur-sm transition-colors hover:bg-black/40">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="text-lg font-bold text-gray-900 line-clamp-1">Karen Garden Cottage</h3>
+                            <div class="flex items-center gap-1 bg-[#D0EDF4] text-[#218A9C] px-2 py-0.5 rounded text-xs font-bold shrink-0">
+                                <i class="fa-solid fa-star text-[10px]"></i> 4.98
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-3">Karen, Nairobi</p>
+                        <div class="flex flex-wrap gap-x-4 gap-y-2 text-xs text-gray-600 mb-4">
+                            <span class="flex items-center gap-1"><i class="fa-solid fa-house-chimney"></i> Cottage</span>
+                            <span class="flex items-center gap-1"><i class="fa-solid fa-fire"></i> Fireplace</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-2 border-t pt-4">
+                            <div>
+                                <span class="text-xl font-bold text-[#A85A32]">$150</span>
+                                <span class="text-xs text-gray-500">/ night</span>
+                            </div>
+                            <button class="bg-[#A85A32] text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-[#8e4c2a] transition-colors">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
-    {{-- Bottom Navigation --}}
-    <nav class="fixed bottom-0 left-0 right-0 w-full bg-white border-t flex justify-around py-3 z-50">
-        <button class="flex flex-col items-center gap-1 text-[#D0EDF4]">
-            <div class="w-16 h-8 bg-[#D0EDF4] rounded-full flex items-center justify-center">
-                <i class="fa-solid fa-magnifying-glass text-[#218A9C] text-lg"></i>
-            </div>
-            <span class="text-xs font-semibold text-gray-800">Explore</span>
-        </button>
-        <button class="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-700 mt-1">
-            <i class="fa-regular fa-heart text-xl"></i>
-            <span class="text-xs font-medium">Saved</span>
-        </button>
-        <button class="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-700 mt-1">
-            <i class="fa-brands fa-airbnb text-xl"></i>
-            <span class="text-xs font-medium">Trips</span>
-        </button>
-        <button class="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-700 mt-1">
-            <i class="fa-regular fa-user text-xl"></i>
-            <span class="text-xs font-medium">Profile</span>
-        </button>
-    </nav>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('search-input');
+            const defaultContent = document.getElementById('default-content');
+            const searchResults = document.getElementById('search-results');
+
+            searchInput.addEventListener('input', function(e) {
+                if (e.target.value.toLowerCase().includes('nairobi')) {
+                    defaultContent.classList.add('hidden');
+                    searchResults.classList.remove('hidden');
+                } else {
+                    defaultContent.classList.remove('hidden');
+                    searchResults.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
 
 </div>
 
