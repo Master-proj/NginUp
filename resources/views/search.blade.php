@@ -31,7 +31,7 @@
             <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-5">Saran Lokasi</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="flex items-center gap-4 cursor-pointer hover:bg-gray-50 p-2 -mx-2 md:mx-0 md:p-4 rounded-xl md:border md:border-gray-100 transition-colors">
-                    <div class="w-12 h-12 rounded-xl bg-[#D0EDF4] flex items-center justify-center text-[#218A9C] shrink-0">
+                    <div class="w-12 h-12 rounded-xl bg-brand-green/10 flex items-center justify-center text-brand-green shrink-0">
                         <i class="fa-solid fa-location-dot text-xl"></i>
                     </div>
                     <div>
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="flex items-center gap-4 cursor-pointer hover:bg-gray-50 p-2 -mx-2 md:mx-0 md:p-4 rounded-xl md:border md:border-gray-100 transition-colors">
-                    <div class="w-12 h-12 rounded-xl bg-[#D0EDF4] flex items-center justify-center text-[#218A9C] shrink-0">
+                    <div class="w-12 h-12 rounded-xl bg-brand-green/10 flex items-center justify-center text-brand-green shrink-0">
                         <i class="fa-solid fa-location-dot text-xl"></i>
                     </div>
                     <div>
@@ -55,7 +55,7 @@
         <section class="px-5 md:px-8 py-4">
             <div class="flex justify-between items-center mb-5">
                 <h2 class="text-xl md:text-2xl font-bold text-gray-900">Pencarian Terakhir</h2>
-                <button class="text-[#A85A32] text-sm font-bold hover:underline">Hapus</button>
+                <button class="text-brand-orange text-sm font-bold hover:underline">Hapus</button>
             </div>
             <div class="flex flex-wrap gap-3">
                 <div class="flex items-center gap-2 border border-gray-200 rounded-full px-5 py-2.5 cursor-pointer hover:bg-gray-50 transition-colors">
@@ -82,7 +82,7 @@
                 <div class="rounded-2xl overflow-hidden relative h-[240px] md:h-[300px] cursor-pointer group shadow-sm">
                     <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                    <div class="absolute top-4 right-4 bg-[#B2531B] text-white text-[10px] md:text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md">
+                    <div class="absolute top-4 right-4 bg-brand-orange text-white text-[10px] md:text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md">
                         Trending
                     </div>
                     <div class="absolute bottom-5 left-5">
@@ -136,7 +136,7 @@
 
             <!-- Filters -->
             <div class="flex gap-2 overflow-x-auto pb-2 mb-6" style="scrollbar-width: none;">
-                <button class="flex items-center gap-2 bg-[#4A646C] text-white px-4 py-2 rounded-full text-sm font-medium shrink-0">
+                <button class="flex items-center gap-2 bg-brand-green text-white px-4 py-2 rounded-full text-sm font-medium shrink-0">
                     <i class="fa-solid fa-sliders"></i> Filters
                 </button>
                 <button class="bg-white border border-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium shrink-0">
@@ -154,19 +154,19 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Card 1 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                    <div class="relative h-56">
+                    <a href="/detail" class="relative h-56 block">
                         <img src="/images/giraffe_view_suite.png" class="w-full h-full object-cover">
                         <div class="absolute top-3 left-3 bg-white px-2 py-1 rounded-md flex items-center gap-1 text-[10px] font-bold text-gray-800 shadow-sm uppercase">
-                            <i class="fa-solid fa-circle-check text-[#A85A32]"></i> Verified Host
+                            <i class="fa-solid fa-circle-check text-brand-orange"></i> Verified Host
                         </div>
-                        <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 flex items-center justify-center text-white backdrop-blur-sm transition-colors hover:bg-black/40">
+                        <button onclick="event.preventDefault(); event.stopPropagation();" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 flex items-center justify-center text-white backdrop-blur-sm transition-colors hover:bg-black/40">
                             <i class="fa-regular fa-heart"></i>
                         </button>
-                    </div>
+                    </a>
                     <div class="p-4">
                         <div class="flex justify-between items-start mb-1">
                             <h3 class="text-lg font-bold text-gray-900 line-clamp-1">The Giraffe View Suite</h3>
-                            <div class="flex items-center gap-1 bg-[#D0EDF4] text-[#218A9C] px-2 py-0.5 rounded text-xs font-bold shrink-0">
+                            <div class="flex items-center gap-1 bg-brand-green/10 text-brand-green px-2 py-0.5 rounded text-xs font-bold shrink-0">
                                 <i class="fa-solid fa-star text-[10px]"></i> 4.92
                             </div>
                         </div>
@@ -178,31 +178,31 @@
                         </div>
                         <div class="flex justify-between items-center mt-2 border-t pt-4">
                             <div>
-                                <span class="text-xl font-bold text-[#A85A32]">$120</span>
+                                <span class="text-xl font-bold text-brand-orange">$120</span>
                                 <span class="text-xs text-gray-500">/ night</span>
                             </div>
-                            <button class="bg-[#A85A32] text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-[#8e4c2a] transition-colors">
+                            <a href="/detail" class="bg-brand-orange text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-brand-orange-hover transition-colors inline-block text-center">
                                 Book Now
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Card 2 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                    <div class="relative h-56">
+                    <a href="/detail" class="relative h-56 block">
                         <img src="/images/skyline_loft.png" class="w-full h-full object-cover">
                         <div class="absolute top-3 left-3 bg-white px-2 py-1 rounded-md flex items-center gap-1 text-[10px] font-bold text-gray-800 shadow-sm uppercase">
-                            <i class="fa-solid fa-circle-check text-[#A85A32]"></i> Verified Host
+                            <i class="fa-solid fa-circle-check text-brand-orange"></i> Verified Host
                         </div>
-                        <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 flex items-center justify-center text-white backdrop-blur-sm transition-colors hover:bg-black/40">
+                        <button onclick="event.preventDefault(); event.stopPropagation();" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 flex items-center justify-center text-white backdrop-blur-sm transition-colors hover:bg-black/40">
                             <i class="fa-regular fa-heart"></i>
                         </button>
-                    </div>
+                    </a>
                     <div class="p-4">
                         <div class="flex justify-between items-start mb-1">
                             <h3 class="text-lg font-bold text-gray-900 line-clamp-1">Skyline Executive Loft</h3>
-                            <div class="flex items-center gap-1 bg-[#D0EDF4] text-[#218A9C] px-2 py-0.5 rounded text-xs font-bold shrink-0">
+                            <div class="flex items-center gap-1 bg-brand-green/10 text-brand-green px-2 py-0.5 rounded text-xs font-bold shrink-0">
                                 <i class="fa-solid fa-star text-[10px]"></i> 4.85
                             </div>
                         </div>
@@ -214,28 +214,28 @@
                         </div>
                         <div class="flex justify-between items-center mt-2 border-t pt-4">
                             <div>
-                                <span class="text-xl font-bold text-[#A85A32]">$85</span>
+                                <span class="text-xl font-bold text-brand-orange">$85</span>
                                 <span class="text-xs text-gray-500">/ night</span>
                             </div>
-                            <button class="bg-[#A85A32] text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-[#8e4c2a] transition-colors">
+                            <a href="/detail" class="bg-brand-orange text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-brand-orange-hover transition-colors inline-block text-center">
                                 Book Now
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                    <div class="relative h-56">
+                    <a href="/detail" class="relative h-56 block">
                         <img src="/images/karen_cottage.png" class="w-full h-full object-cover">
-                        <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 flex items-center justify-center text-white backdrop-blur-sm transition-colors hover:bg-black/40">
+                        <button onclick="event.preventDefault(); event.stopPropagation();" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/20 flex items-center justify-center text-white backdrop-blur-sm transition-colors hover:bg-black/40">
                             <i class="fa-regular fa-heart"></i>
                         </button>
-                    </div>
+                    </a>
                     <div class="p-4">
                         <div class="flex justify-between items-start mb-1">
                             <h3 class="text-lg font-bold text-gray-900 line-clamp-1">Karen Garden Cottage</h3>
-                            <div class="flex items-center gap-1 bg-[#D0EDF4] text-[#218A9C] px-2 py-0.5 rounded text-xs font-bold shrink-0">
+                            <div class="flex items-center gap-1 bg-brand-green/10 text-brand-green px-2 py-0.5 rounded text-xs font-bold shrink-0">
                                 <i class="fa-solid fa-star text-[10px]"></i> 4.98
                             </div>
                         </div>
@@ -246,12 +246,12 @@
                         </div>
                         <div class="flex justify-between items-center mt-2 border-t pt-4">
                             <div>
-                                <span class="text-xl font-bold text-[#A85A32]">$150</span>
+                                <span class="text-xl font-bold text-brand-orange">$150</span>
                                 <span class="text-xs text-gray-500">/ night</span>
                             </div>
-                            <button class="bg-[#A85A32] text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-[#8e4c2a] transition-colors">
+                            <a href="/detail" class="bg-brand-orange text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-brand-orange-hover transition-colors inline-block text-center">
                                 Book Now
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

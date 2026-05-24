@@ -14,12 +14,12 @@
     {{-- Header --}}
     <header class="flex justify-between items-center px-4 md:px-8 py-4 border-b bg-white sticky top-0 z-20">
         <div class="flex items-center gap-4">
-            <a href="/home" class="text-[#9E4A1C] hover:bg-orange-50 w-10 h-10 flex items-center justify-center rounded-full transition-colors">
+            <a href="/home" class="text-brand-orange-hover hover:bg-brand-orange/10 w-10 h-10 flex items-center justify-center rounded-full transition-colors">
                 <i class="fa-solid fa-arrow-left text-lg"></i>
             </a>
             <h1 class="text-lg font-semibold">Pilih Tanggal</h1>
         </div>
-        <button class="text-[#9E4A1C] font-semibold text-sm hover:underline px-2">
+        <button class="text-brand-orange-hover font-semibold text-sm hover:underline px-2">
             Reset
         </button>
     </header>
@@ -29,11 +29,11 @@
         <div class="flex gap-4">
             <div class="flex-1 bg-white border border-[#E5D5C5] rounded-xl p-3 shadow-sm">
                 <p class="text-[10px] md:text-xs text-[#8B7355] font-bold tracking-wider mb-1 uppercase">Check-In</p>
-                <p class="text-[#9E4A1C] font-bold text-lg">12 Okt</p>
+                <p class="text-brand-orange-hover font-bold text-lg">12 Okt</p>
             </div>
             <div class="flex-1 bg-white border border-[#E5D5C5] rounded-xl p-3 shadow-sm">
                 <p class="text-[10px] md:text-xs text-[#8B7355] font-bold tracking-wider mb-1 uppercase">Check-Out</p>
-                <p class="text-[#9E4A1C] font-bold text-lg">15 Okt</p>
+                <p class="text-brand-orange-hover font-bold text-lg">15 Okt</p>
             </div>
         </div>
     </div>
@@ -85,23 +85,23 @@
                     
                     {{-- 11 - Current day (circled border) --}}
                     <div class="h-10 flex items-center justify-center cursor-pointer">
-                        <div class="w-9 h-9 flex items-center justify-center rounded-full border-2 border-[#9E4A1C] font-semibold">11</div>
+                        <div class="w-9 h-9 flex items-center justify-center rounded-full border-2 border-brand-orange-hover font-semibold">11</div>
                     </div>
 
                     {{-- 12 - Selected Start --}}
                     <div class="h-10 flex items-center justify-center cursor-pointer relative bg-gradient-to-r from-transparent from-50% to-[#FBE9E0] to-50%">
-                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-[#9E4A1C] text-white font-semibold z-10 relative shadow-md">12</div>
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-brand-orange-hover text-white font-semibold z-10 relative shadow-md">12</div>
                     </div>
 
                     {{-- 13 - In range --}}
-                    <div class="h-10 flex items-center justify-center cursor-pointer bg-[#FBE9E0] text-[#9E4A1C] font-medium">13</div>
+                    <div class="h-10 flex items-center justify-center cursor-pointer bg-[#FBE9E0] text-brand-orange-hover font-medium">13</div>
                     
                     {{-- 14 - In range --}}
-                    <div class="h-10 flex items-center justify-center cursor-pointer bg-[#FBE9E0] text-[#9E4A1C] font-medium">14</div>
+                    <div class="h-10 flex items-center justify-center cursor-pointer bg-[#FBE9E0] text-brand-orange-hover font-medium">14</div>
                     
                     {{-- 15 - Selected End --}}
                     <div class="h-10 flex items-center justify-center cursor-pointer relative bg-gradient-to-r from-[#FBE9E0] from-50% to-transparent to-50%">
-                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-[#9E4A1C] text-white font-semibold z-10 relative shadow-md">15</div>
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-brand-orange-hover text-white font-semibold z-10 relative shadow-md">15</div>
                     </div>
 
                     {{-- Row 4 --}}
@@ -259,7 +259,7 @@
 
     {{-- Bottom Action Bar --}}
     <div class="fixed bottom-0 left-0 right-0 bg-white border-t p-4 z-20 md:absolute md:rounded-b-lg">
-        <button class="w-full bg-[#9E4A1C] hover:bg-[#8A3F14] text-white font-medium py-4 rounded-xl transition-colors shadow-lg">
+        <button class="w-full bg-brand-orange-hover hover:bg-[#8A3F14] text-white font-medium py-4 rounded-xl transition-colors shadow-lg">
             Simpan (3 Malam)
         </button>
     </div>
