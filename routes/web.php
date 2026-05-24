@@ -81,3 +81,12 @@ Route::get('/register', function () {
 Route::get('/register/success', function () {
     return view('auth.register-success');
 });
+
+// Admin Routes
+Route::get('/admin/dashboard', function () {
+    return view('admin-dashboard');
+});
+
+Route::get('/admin/reports', function () {
+    return view('admin-dashboard');
+});
