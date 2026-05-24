@@ -58,6 +58,22 @@ Route::get('/host/dashboard', function () {
     return view('host-dashboard');
 });
 
+Route::get('/host/add-new', function () {
+    return view('host-add-new');
+});
+
+Route::get('/host/properties', function () {
+    return view('host-properties');
+});
+
+Route::get('/host/reports', function () {
+    return view('host-reports');
+});
+
+Route::get('/host/account', function () {
+    return view('host-account');
+});
+
 Route::get('/register', function () {
     return view('auth.register');
 });

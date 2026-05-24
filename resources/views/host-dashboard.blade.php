@@ -9,7 +9,7 @@
 
     {{-- Welcome Header --}}
     <div class="mb-6">
-        <h1 class="text-2xl md:text-3xl font-bold text-[#1a2b3c] mb-1">Welcome back, Alex <span class="inline-block origin-bottom-right hover:rotate-12 transition-transform">👋</span></h1>
+        <h1 class="text-2xl md:text-3xl font-bold text-[#1a2b3c] mb-1">Welcome back, Gibran!</h1>
         <p class="text-sm md:text-base text-gray-500">Check your performance for today.</p>
     </div>
 

@@ -22,7 +22,7 @@
         
         <div class="flex items-center gap-2 mb-10 px-2">
             <div class="w-8 h-8 flex items-center justify-center text-brand-orange">
-                <i class="fa-solid fa-face-smile-wink text-2xl"></i>
+                <img src="{{ asset('logo_Nginup.png') }}" alt="Logo">
             </div>
             <h1 class="text-2xl font-bold text-brand-orange">
                 NginUp
@@ -94,8 +94,8 @@
                 <button class="md:hidden text-gray-400 hover:text-gray-600 p-2">
                     <i class="fa-solid fa-bars text-xl"></i>
                 </button>
-                <div class="hidden md:flex w-10 h-10 rounded-full overflow-hidden border-2 border-white shadow-sm ml-2">
-                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=100&auto=format&fit=crop" class="w-full h-full object-cover">
+                <div class="hidden md:flex w-10 h-10 rounded-full bg-orange-100 items-center justify-center text-brand-orange font-bold border-2 border-white shadow-sm ml-2">
+                    G
                 </div>
             </div>
         </nav>
